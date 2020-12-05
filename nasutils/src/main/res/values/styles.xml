@@ -1,0 +1,267 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+        <!-- APP BUTTON STYLES -->
+        <style name="Button" parent="AppTheme">
+            <item name="android:paddingTop">20dp</item>
+            <item name="android:paddingBottom">20dp</item>
+        </style>
+
+        <style name="Button.DarkGreen" parent="Button">
+            <item name="colorButtonNormal">@color/colorDarkGreen</item>
+            <item name="colorControlHighlight">@color/colorAlphaWhite</item>
+        </style>
+
+        <style name="Button.AppGreen" parent="Button">
+            <item name="colorButtonNormal">@color/colorAppGreen</item>
+            <item name="colorControlHighlight">@color/colorAlphaWhite</item>
+        </style>
+
+        <style name="Button.Orange" parent="Button">
+            <item name="colorButtonNormal">@color/colorOrange</item>
+            <item name="colorControlHighlight">@color/colorAlphaWhite</item>
+        </style>
+
+        <style name="Button.White" parent="Button">
+            <item name="colorButtonNormal">@color/colorWhite</item>
+            <item name="colorControlHighlight">@color/colorAlphaAppGreen</item>
+        </style>
+
+        <style name="Text.Button" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+            <item name="android:fontFamily">@font/metropolis_medium</item>
+            <item name="android:textAllCaps">true</item>
+        </style>
+
+        <style name="Text.Button.White" parent="Text.Button">
+            <item name="android:textColor">@color/colorWhite</item>
+        </style>
+
+        <style name="Text.Button.AppGreen" parent="Text.Button">
+            <item name="android:textColor">@color/colorAppGreen</item>
+        </style>
+        <!-- ENDS -->
+
+        <!-- APP TEXT STYLES {Type}.{Appearance}.{Font}.{Color}-->
+        <!--HeadLine-->
+        <style name="Text.Headline.Bold" parent="TextAppearance.AppCompat.Display1">
+            <item name="android:fontFamily">@font/metropolis_bold</item>
+        </style>
+
+        <style name="Text.Headline.Bold.White" parent="Text.Headline.Bold">
+            <item name="android:textColor">@color/colorWhite</item>
+        </style>
+        <style name="Text.Headline.AppTextBlue" parent="TextAppearance.AppCompat.Display1">
+            <item name="android:textColor">@color/colorAppTextBlue</item>
+        </style>
+
+
+        <!--Title-->
+        <style name="Text.Title.Medium" parent="TextAppearance.AppCompat.Headline">
+            <item name="android:fontFamily">@font/metropolis_medium</item>
+        </style>
+
+        <style name="Text.Title.SemiBold" parent="TextAppearance.AppCompat.Headline">
+            <item name="android:fontFamily">@font/metropolis_semibold</item>
+        </style>
+        <!--semibold -->
+        <style name="Text.SemiBold.white" parent="TextAppearance.AppCompat.Small">
+            <item name="android:fontFamily">@font/metropolis_semibold</item>
+            <item name="android:textColor">@color/colorWhite</item>
+        </style>
+        <style name="Text.Title.Medium.AppTextBlue" parent="Text.Title.Medium">
+            <item name="android:textColor">@color/colorAppTextBlue</item>
+        </style>
+
+        <style name="Text.Title.SemiBold.AppGreen" parent="Text.Title.SemiBold">
+            <item name="android:textColor">@color/colorAppGreen</item>
+        </style>
+
+        <!--SubTitle-->
+        <style name="Text.SubTitle.Light" parent="TextAppearance.AppCompat.Subhead">
+            <item name="android:fontFamily">@font/metropolis_light</item>
+        </style>
+        <style name="Text.SubTitle.Regular" parent="TextAppearance.AppCompat.Subhead">
+            <item name="android:fontFamily">@font/metropolis_regular</item>
+        </style>
+
+        <style name="Text.SubTitle.Light.AppTextBlue" parent="Text.SubTitle.Light">
+            <item name="android:textColor">@color/colorAppTextBlue</item>
+        </style>
+
+        <style name="Text.SubTitle.Regular.AppActiveTextBlue" parent="Text.SubTitle.Regular">
+            <item name="android:textColor">@color/colorAppActiveTextBlue</item>
+        </style>
+
+        <!--Large-->
+        <style name="Text.Large.Light" parent="TextAppearance.AppCompat.Large">
+            <item name="android:fontFamily">@font/metropolis_light</item>
+        </style>
+
+        <style name="Text.Large.Light.White" parent="Text.Large.Light">
+            <item name="android:textColor">@color/colorWhite</item>
+        </style>
+
+        <!--Semi Large-->
+        <style name="Text.SemiLarge.Medium" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+            <item name="android:fontFamily">@font/metropolis_medium</item>
+        </style>
+
+        <style name="Text.SemiLarge.Medium.AppTextBlue" parent="Text.SemiLarge.Medium">
+            <item name="android:textColor">@color/colorAppTextBlue</item>
+        </style>
+
+        <style name="Text.SemiLarge.Medium.White" parent="Text.SemiLarge.Medium">
+            <item name="android:textColor">@color/colorWhite</item>
+        </style>
+
+        <!--Sub Tittle-->
+        <style name="Text.Title" parent="TextAppearance.AppCompat.SearchResult.Title">
+            <item name="android:fontFamily">@font/metropolis_regular</item>
+        </style>
+
+        <style name="Text.Title.AppTextBlue" parent="Text.Title">
+            <item name="android:textColor">@color/colorAppTextBlue</item>
+        </style>
+
+        <style name="Text.Title.White" parent="Text.Title">
+            <item name="android:textColor">@color/colorWhite</item>
+        </style>
+
+        <!--Medium-->
+        <style name="Text.Medium.Medium" parent="TextAppearance.AppCompat.Medium">
+            <item name="android:fontFamily">@font/metropolis_medium</item>
+        </style>
+
+        <style name="Text.Medium.Regular" parent="TextAppearance.AppCompat.Medium">
+            <item name="android:fontFamily">@font/metropolis_regular</item>
+        </style>
+
+        <style name="Text.Medium.Regular.AppActiveTextBlue" parent="Text.Medium.Regular">
+            <item name="android:textColor">@color/colorAppActiveTextBlue</item>
+        </style>
+
+        <style name="Text.Medium.Medium.White" parent="Text.Medium.Medium">
+            <item name="android:textColor">@color/colorWhite</item>
+        </style>
+
+        <style name="Text.Medium.Medium.AppTextBlue" parent="Text.Medium.Medium">
+            <item name="android:textColor">@color/colorAppTextBlue</item>
+        </style>
+
+        <style name="Text.Medium.Medium.AppGreen" parent="Text.Medium.Medium">
+            <item name="android:textColor">@color/colorAppGreen</item>
+        </style>
+
+        <style name="Text.Medium.Medium.AppActiveTextBlue" parent="Text.Medium.Medium">
+            <item name="android:textColor">@color/colorAppActiveTextBlue</item>
+        </style>
+
+        <!--Small-->
+        <style name="Text.Small.Light" parent="TextAppearance.AppCompat.Small">
+            <item name="android:fontFamily">@font/metropolis_light</item>
+            <item name="android:lineSpacingMultiplier">1.5</item>
+        </style>
+
+        <style name="Text.Small.Light.White" parent="Text.Small.Light">
+            <item name="android:textColor">@color/colorWhite</item>
+        </style>
+
+
+        <style name="Text.Small.Light.AppGreen" parent="Text.Small.Light">
+            <item name="android:textColor">@color/colorAppGreen</item>
+        </style>
+
+        <style name="Text.Small.Light.Orange" parent="Text.Small.Light">
+            <item name="android:textColor">@color/colorOrange</item>
+        </style>
+
+        <!--Extra Small-->
+        <style name="Text.ExtraSmall.Light" parent="TextAppearance.AppCompat.Caption">
+            <item name="android:fontFamily">@font/metropolis_light</item>
+        </style>
+
+        <!-- TEXT STYLES ENDS -->
+
+        <!--Edit Text & Hint-->
+        <style name="EditText.Medium.Regular" parent="Text.Medium.Regular">
+            <item name="android:textColorHint">@color/colorAlphaAppTextBlue</item>
+            <item name="android:textColor">@color/colorAppActiveTextBlue</item>
+        </style>
+
+        <style name="EditTextHint.Medium.Light" parent="Text.ExtraSmall.Light">
+
+
+            <item name="android:textColorHint">@color/colorAlphaAppTextBlue</item>
+            <item name="android:textColor">@color/colorAlphaAppTextBlue</item>
+        </style>
+
+
+        <style name="EditTextError.Medium.Light" parent="Text.ExtraSmall.Light">
+
+            <item name="colorControlNormal">@color/colorLightBlue</item>
+            <item name="colorControlActivated">@color/colorAppTextBlue</item>
+            <item name="colorControlHighlight">@color/colorAppTextBlue</item>
+
+
+            <item name="android:textColor">@android:color/holo_red_light</item>
+        </style>
+        <!-- ENDS -->
+
+        <!--Alert Dialog Theme -->
+        <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+            <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+            <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+            <item name="android:colorAccent">@color/colorAppTextBlue</item>
+            <item name="android:textColor">@color/colorAppActiveTextBlue</item>
+            <item name="android:fontFamily">@font/metropolis_medium</item>
+            <item name="android:textColorPrimary">@color/colorAppTextBlue</item>
+        </style>
+
+        <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+            <item name="android:textColor">@color/colorAlphaAppTextBlue</item>
+            <item name="android:fontFamily">@font/metropolis_semibold</item>
+        </style>
+
+        <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+            <item name="android:textColor">@color/colorAppGreen</item>
+            <item name="android:fontFamily">@font/metropolis_semibold</item>
+        </style>
+        <!-- ENDS -->
+
+        <style name="CheckBoxTheme" parent="AppTheme">
+            <item name="colorControlNormal">@color/colorAppGreen</item>
+            <item name="colorControlActivated">@color/colorAppGreen</item>
+        </style>
+
+    <style name="ToolbarTheme" parent="AppTheme">
+        <item name="colorControlNormal">@color/colorAppTextBlue</item>
+        <item name="android:textColor">@color/colorAppActiveTextBlue</item>
+        <item name="android:fontFamily">@font/metropolis_regular</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+    <style name="TI.WhiteBg" parent="Widget.Design.TextInputLayout">
+        <item name="android:fontFamily">@font/metropolis_light</item>
+        <item name="hintTextAppearance">@style/TextAppearance.AppCompat.Small</item>
+        <item name="errorTextAppearance">@style/EditTextError.Medium.Light</item>
+        <item name="android:textColor">@color/colorAlphaAppTextBlue</item>
+        <item name="android:textColorHint">@color/colorAlphaAppTextBlue</item>
+
+        <item name="colorControlNormal">@color/colorLightBlue</item>
+        <item name="colorControlActivated">@color/colorAppTextBlue</item>
+        <item name="colorControlHighlight">@color/colorAppTextBlue</item>
+
+
+    </style>
+
+</resources>

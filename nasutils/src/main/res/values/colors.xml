@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorWhite</color>
+    <color name="colorPrimaryDark">@color/colorWhite</color>
+    <color name="colorAccent">@color/colorAppGreen</color>
+
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="colorAppGreen">#539422</color>
+    <color name="colorAlphaAppGreen">#97539422</color>
+    <color name="colorDarkGreen">#296018</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorAlphaWhite">#72FFFFFF</color>
+    <color name="colorOrange">#FF6257</color>
+    <color name="colorAppTextBlue">#5C6979</color>
+    <color name="colorAlphaAppTextBlue">#995C6979</color>
+    <color name="colorExtraDarkBlue">#2A2E43</color>
+    <color name="colorAppActiveTextBlue">#454F63</color>
+    <color name="colorYellow">#F3A54B</color>
+    <color name="colorLightBlue">#D3D9E2</color>
+    <color name="colorLightGray">#D2D8E0</color>
+    <color name="colorAppLightGreen">#D1E2C5</color>
+    <color name="colorSnow">#FAFAFA</color>
+    <color name="colorLightWhite">#F7F7FA</color>
+    <color name="colorMildGrey">#E6E7E8</color>
+    <color name="colorMildBlue">#D3D9E2</color>
+    <color name="colorAlphaBlack">#CD000000</color>
+    <color name="secondary_text">#FF727272</color>
+</resources>

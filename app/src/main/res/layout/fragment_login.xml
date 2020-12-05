@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAppGreen">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title_1"
+            style="@style/Text.Large.Light.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_padding"
+            android:text="@string/welcome_to_leaf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title_2"
+            style="@style/Text.Headline.Bold.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="Bankaks"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/main_padding"
+            android:layout_marginBottom="@dimen/main_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:tint="@color/colorWhite"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_2"
+            app:srcCompat="@drawable/ic_big" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sign_up"
+            style="@style/Text.Button.White"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawableEnd="@drawable/ic_drop_down"
+            android:text="Chose Bill Type"
+            android:drawableStart="@drawable/ic_caret_down"
+            android:theme="@style/Button.DarkGreen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_welcome" />
+
+        <com.smb.smbapplication.utils.widget.SpinnerPlus
+            android:id="@+id/sp_val_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_sign_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btn_sign_up"
+            app:layout_constraintTop_toBottomOf="@+id/iv_welcome" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            style="@style/Text.Button.AppGreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="GO"
+            android:theme="@style/Button.White"
+            android:transitionName="@string/enter_login_btn_welcome"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/btn_sign_up"
+            app:layout_constraintStart_toStartOf="@+id/btn_sign_up"
+            app:layout_constraintTop_toBottomOf="@+id/btn_sign_up" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

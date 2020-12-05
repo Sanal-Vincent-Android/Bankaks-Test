@@ -1,0 +1,218 @@
+<resources>
+    <string name="app_name">Bankaks-Recharge App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="retry">Retry</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="empty_search_result">No results </string>
+    <string name="submit">Submit</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+
+    <string name="msg_name">Name : <b>%s</b></string>
+    <string name="msg_email">Email : <b>%s</b></string>
+
+    <string name="title_registration_step_one">Registration</string>
+    <string name="title_registration_step_two">Registration Conti..</string>
+    <string name="password_criteria_not_met">Password must be more than 6 characters with at least 1 Alphabet, 1 Number and 1 Special Character</string>
+
+    <string name="email_sign_in_empty">Enter your email address</string>
+    <string name="error_network_server">Server not responding. Try again in a few</string>
+    <string name="error_network">Sorry, we couldn\'t connect to internet</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="password_sign_empty">Set a password</string>
+    <string name="driver">Bankaks</string>
+    <string name="home">Home</string>
+    <string name="welcome_to_leaf">Welcome to Sales Agent Mobile App</string>
+    <string name="thanks_for_updating_partner">Thanks for updating, Partner!</string>
+    <string name="please_check_your_email_to_learn_more_about_next_steps">You\'re profile under varification!
+        \n Please sign up or login to continue!
+    </string>
+    <string name="please_check_your_email_to_learn_more_about">You\'re almost ready to hit the road!
+        \n Please sign up or login to continue!
+    </string>
+    <string name="please_check_">You\'re profile under varification!
+    </string>
+    <string name="login">Login</string>
+    <string name="accept">Accept</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome">Welcome</string>
+    <string name="already_member_login_here">Already member? Login here</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="email_required">Email is required</string>
+    <string name="email_invalid">Email is invalid</string>
+    <string name="password_required">Password is required</string>
+    <string name="password_invalid">Password must contain one number, one uppercase letter, and be atleast 6 (max 20)
+        characters long.
+    </string>
+    <string name="password_reset_link_info">Enter your registered phone and we will send you OTP to reset your
+        password.
+    </string>
+    <string name="enter_your_details_to_continue">Enter your details to continue</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="country">Country</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="_continue">Continue</string>
+    <string name="terms">By creating an account you agree to our\nTerms of Service &amp; Privacy Policy</string>
+    <string name="first_name_required">First Name is required</string>
+    <string name="last_name_required">Last Name is required</string>
+    <string name="phone_required">Phone is required</string>
+    <string name="phone_invalid">Phone is invalid</string>
+    <string name="reenter_password">Re-enter your password</string>
+    <string name="password_not_matching">Password do not match!</string>
+    <string name="enter_login_btn_welcome">EnterLoginBtnWelcomeTransition</string>
+    <string name="exit_login_btn_welcome">ExitLoginBtnWelcomeTransition</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="account">Account</string>
+    <string name="view_and_edit_profile">View and edit profile</string>
+    <string name="profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="your_driver_will_see_this_on_your_driver_profile">Your rider will see this on your\n driver profile
+    </string>
+    <string name="what_languages_do_you_know">What languages \ndo you know?</string>
+    <string name="we_sent_to_you">We sent to you @&#160;%1$s&#160;%2$s</string>
+    <string name="resend_otp">Resend OTP?</string>
+    <string name="change_your_number">Change your number</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_your_new_password">Enter your new password.</string>
+    <string name="new_password">New Password</string>
+    <string name="upload_documents">Upload Documents</string>
+    <string name="personal_documents">Personal Documents</string>
+    <string name="upload_your_photo_and_driving_license">Upload your photo and driving license</string>
+    <string name="photo">Photo</string>
+    <string name="driving_license">Driving License</string>
+    <string name="vehicle_documents">Vehicle Documents</string>
+    <string name="upload_your_vehicle_documents">Upload your vehicle documents</string>
+    <string name="your_vehicle_documents">Your vehicle documents</string>
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="upload">Upload</string>
+    <string name="front_side">Front Side</string>
+    <string name="upload_front_side_of_your_driving_license">Upload front side of your driving license</string>
+    <string name="back_side">Back Side</string>
+    <string name="upload_back_side_of_your_driving_license">Upload back side of your driving license</string>
+    <string name="upload_your_vehicle_photo">Upload your vehicle photo</string>
+    <string name="make">Make</string>
+    <string name="model">Model</string>
+    <string name="type">Type</string>
+    <string name="year">Year</string>
+    <string name="license_plate">License Plate</string>
+    <string name="vehicle_color">Vehicle Color</string>
+    <string name="registration">Registration</string>
+    <string name="insurance">Insurance</string>
+    <string name="thank_you_for_updating_your_partner_profile">Thank you for updating your\npartner profile!</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="you_re_all_done">You\'re all done</string>
+    <string name="check_my_status">Check My Status</string>
+    <string name="enter_vehicle_make">Enter your vehicle make</string>
+    <string name="enter_vehicle_model">Enter your vehicle model</string>
+    <string name="enter_vehile_license_plate">Enter your vehicle license plate</string>
+    <string name="enter_vehicle_color">Enter your vehicle color</string>
+    <string name="enter_wrong_pattern">Vehicle color contains only alphabets</string>
+    <string name="enter_wrong_licence_plate">Invalid Licence plate format</string>
+    <string name="enter_wrong_street">Invalid Street Address format</string>
+    <string name="enter_wrong_country">Invalid Country Address format</string>
+    <string name="enter_wrong_city">Invalid City Address format</string>
+    <string name="enter_wrong_state">Invalid State Address format</string>
+    <string name="enter_wrong_pincode">Invalid Pin code format</string>
+    <string name="enter_make_wrong_pattern">Invalid Brand name</string>
+
+    <string name="to_continue_add_vehicle">Please upload your vehicle photo, registration book photo and insurance photo
+        to continue
+    </string>
+    <string name="uploading_failed">Uploading Failed!! Error during upload: %1$s</string>
+    <string name="uploading_terminated">Uploading has been %1$s</string>
+    <string name="vehicle_document_uploaded_successfully">Vehicle documents has been uploaded successfully</string>
+    <string name="to_continue_license_uploading">Please upload front and back side of your driving license</string>
+    <string name="driving_license_uploaded_successfully">Driving License documents has been uploaded successfully
+    </string>
+    <string name="to_continue_upload_document">Please upload your photo, license details and vehicle details to
+        continue
+    </string>
+    <string name="upload_document_to_continue">Please upload your document photo to continue</string>
+    <string name="exit_msg">Press again to exit!</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+    <string name="login_to_continue">Login to Continue</string>
+    <string name="alert_logout">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="vehicle_details">Vehicle Details</string>
+    <string name="welcome_progress">Hi %1$s, your progress</string>
+    <string name="review_may_take_a_few_days">Review may take a few days</string>
+    <string name="something_went_wrong">Something went wrong!!\nPlease try again later.</string>
+    <string name="update_vehicle">Update Vehicle</string>
+    <string name="remarks">Remarks:</string>
+    <string name="upload_document">Upload %1$s</string>
+    <string name="review_completed">Review has been completed</string>
+    <string name="proceed_to_home">Proceed to Home</string>
+    <string name="ooops">Ooops...</string>
+    <string name="your_vehicles">Your Vehicles</string>
+    <string name="remove_vehicle">Remove Vehicle</string>
+    <string name="documents">Documents</string>
+    <string name="uploading_failed_invalid_file">Uploading failed due to invalid file</string>
+    <string name="error_no_notification">No notification found!</string>
+    <string name="payments">Payments</string>
+    <string name="add_payout_method">Add Payout Method</string>
+    <string name="payment_to_leaf">Payment to Leaf</string>
+    <string name="add_cards_in_order_to_make_payment_to_leaf">Add cards in order to make payment to Leaf</string>
+    <string name="payout_info">Add the bank account where you want to receive your weekly earnings</string>
+    <string name="add_bank_account">Add Bank Account</string>
+    <string name="bank_record_name_check">Please check the box if the above name is exactly as per registered on bank
+        records
+    </string>
+    <string name="update">Update</string>
+    <string name="ssn_is_required">Enter last 4 digits of SSN number</string>
+    <string name="invalid_ssn">Enter valid SSN number</string>
+    <string name="routing_number_required">Routing number is required</string>
+    <string name="account_number_required">Account number is required</string>
+    <string name="reenter_account_number">Re-enter your account number</string>
+    <string name="account_number_dont_match">Account number do not match!</string>
+    <string name="address_required">Address is required</string>
+    <string name="city_required">City is required</string>
+    <string name="state_required">State is required</string>
+    <string name="postal_code_required">Postal code is required</string>
+    <string name="dob_required">Date of birth is required</string>
+    <string name="last_4_digits_of_ssn">Last 4 digits of SSN</string>
+    <string name="routing_number">Routing Number</string>
+    <string name="account_number">Account Number</string>
+    <string name="re_enter_account_number">Re-enter Account Number</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="city">City</string>
+    <string name="deny">Deny</string>
+    <string name="state">State</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="update_bank_account">Update Bank Account</string>
+    <string name="alert_set_vehicle_default">Do you want to set \"%1$s\" as your default car?</string>
+    <string name="make_default">Make Default</string>
+
+
+    <string name="alert_ride_request_dismiss_after_timout">Please accept ride within 30 second, otherwise your trip will
+        automatically denied
+    </string>
+    <string name="cancel_if_rider_isn_t_here">Cancel if rider isn\'t here</string>
+    <string name="waiting_time">Waiting Time</string>
+    <string name="emergency">Emergency</string>
+    <string name="collect_cash">Collect Cash</string>
+    <string name="about">About</string>
+    <string name="promotion_applied">Promotion Applied</string>
+    <string name="your_on_the_way">You are on the Way</string>
+    <string name="pick_up_location">Pickup Location</string>
+    <string name="ride_in_progress">Ride in Progress</string>
+    <string name="you_will_arived_at">You will arrive at </string>
+    <string name="you_arrived">You Arrived</string>
+    <string name="bank_not_added">Bank not added!</string>
+    <string name="hey_it_seems_that_you_had_not_added_bank_account_yet">Hey, it seems that you had not added bank account yet</string>
+    <string name="may_be_later">May be later</string>
+
+</resources>

@@ -1,0 +1,139 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'jacoco'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+
+apply plugin: 'androidx.navigation.safeargs'
+
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION.toInteger()
+    buildToolsVersion buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.smb.bankaks"
+
+        minSdkVersion      MIN_SDK_VERSION.toInteger()
+        targetSdkVersion   TARGET_SDK_VERSION.toInteger()
+        versionCode        VERSION_CODE.toInteger()
+        versionName        VERSION_NAME
+
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+kapt {
+    generateStubs = true
+}
+
+jacoco {
+    toolVersion = "0.7.4+"
+}
+dependencies {
+
+    implementation project(path: ':imagepicker1')
+    implementation project(path: ':cropper1')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(path: ':nasutils')
+    // android support libraries
+    implementation deps.kotlin.stdlib
+    implementation deps.core_ktx
+    implementation deps.anko_version
+    //Material Design
+    implementation deps.material
+    implementation deps.cardview
+    implementation deps.recyclerview
+    //Support libs
+    implementation deps.app_compat
+    implementation deps.constraint_layout
+    // Life cycle
+    implementation deps.lifecycle.extensions
+    implementation deps.lifecycle.java8
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    kapt deps.lifecycle.compiler
+    // Room
+    implementation deps.room.runtime
+    kapt deps.room.compiler
+    //Navigation
+    implementation deps.navigation.fragment_ktx
+    implementation deps.navigation.ui_ktx
+    // dependency injection
+    implementation deps.dagger.runtime
+    implementation deps.dagger.android
+    implementation deps.dagger.android_support
+    kapt deps.dagger.android_support_compiler
+    kapt deps.dagger.compiler
+    //Pin View
+    implementation deps.pinview
+    //Country Pick out
+    implementation deps.country_pick
+    //ProgressBar
+    implementation deps.android_spinkit
+    //Fresco
+    implementation deps.fresco
+    implementation deps.aws_s3
+    // retrofit webservice
+    implementation deps.retrofit.runtime
+    implementation deps.retrofit.gson
+    implementation deps.okhttp_logging_interceptor
+    // UI Testing
+    testImplementation deps.junit
+    androidTestImplementation deps.espresso.core
+    //Place sdk by Google
+    implementation deps.places
+
+}
+
+
+task fullCoverageReport(type: JacocoReport) {
+    dependsOn 'createDebugCoverageReport'
+    dependsOn 'testDebugUnitTest'
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+
+    def fileFilter = ['**/R.class', '**/R$*.class', '**/BuildConfig.*', '**/Manifest*.*',
+                      '**/*Test*.*', 'android/**/*.*',
+                      '**/*_MembersInjector.class',
+                      '**/Dagger*Component.class',
+                      '**/Dagger*Component$Builder.class',
+                      '**/*_*Factory.class',
+                      '**/*ComponentImpl.class',
+                      '**/*SubComponentBuilder.class']
+    def debugTree = fileTree(dir: "${buildDir}/intermediates/classes/debug", excludes: fileFilter)
+    def mainSrc = "${project.projectDir}/src/main/java"
+
+    sourceDirectories.from = files([mainSrc])
+    classDirectories.from =files([debugTree])
+    executionData.from =fileTree(dir: "$buildDir", includes: [
+            "jacoco/testDebugUnitTest.exec",
+            "outputs/code-coverage/connected/*coverage.ec"
+    ])
+}
+
+// we need all open to run tests which  a we enable only for debug builds.
+project.tasks.whenTaskAdded {
+    if (it.name == "testReleaseUnitTest") {
+        it.enabled = false
+    }
+}
